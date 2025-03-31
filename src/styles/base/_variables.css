@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --font-cormorant: "Cormorant", serif;
+    --font-quicksand: "Quicksand", sans-serif;
+    
+    /* Fonts */
+    --title-font: var(--font-cormorant); /* Font used for titles */
+    --primary-font: var(--font-quicksand); /* Font used for base text */
+
+    /* Background colors */
+    --orange-color : #F07232;
+    --white-color: #FFFFFF
+    --black-color : #000000;
+}
+

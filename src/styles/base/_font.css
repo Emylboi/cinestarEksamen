@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap');
+
+body, p {
+    font-family: var(--primary-font);
+}
+
+h1, h2, h3, h4, button {
+    font-family: var(--title-font);
+}
