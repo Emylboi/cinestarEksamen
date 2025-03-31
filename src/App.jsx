@@ -9,6 +9,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import BackofficeMessagesPage from "./pages/backoffice/backofficePages/BackofficeMessagesPage";
 import BackofficeReviewsPage from "./pages/backoffice/backofficePages/BackofficeReviewsPage";
 import BoReviewsForm from "./components/backofficeComp/Reviews/outlet/BoReviewsForm";
+import Header from "./components/commonComp/Header/Header";
+import Footer from "./components/commonComp/Footer/Footer";
 
 function App() {
   const { signedIn, user } = useAuth();
@@ -77,9 +79,9 @@ function App() {
   return (
     <>
       <div>
-        {/* {!isBackoffice && <Header />} */}
+        {!isBackoffice && <Header />}
         <div className="globale-page-wrapper">{routes}</div>
-        {/* {!isBackoffice && <Footer />} */}
+        {!isBackoffice && <Footer />}
         
       </div>
     </>

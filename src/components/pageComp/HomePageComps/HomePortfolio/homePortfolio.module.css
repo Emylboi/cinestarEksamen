@@ -1,0 +1,13 @@
+.container{
+    background-color: #212121;
+}
+
+.texts{
+    padding: 5vh 25px;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 20px;
+}

@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--black-color);
+}
+
+.content{
+    width: 100%;
+}
+
+.awardLogo{
+    width: 100%;
+    padding: 25px;
+}

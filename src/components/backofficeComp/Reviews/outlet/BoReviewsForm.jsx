@@ -51,7 +51,7 @@ const BoReviewsForm = () => {
     editMode && formData.append("id", review?._id);
 
     // If we're in editMode, we update the review, otherwise we add the review.
-    editMode ? updateReview(formData) : addReview(formData);
+    editMode ? updateReview({...review, id: review._id}) : addReview({...review});
   };
 
   return (
@@ -99,10 +99,10 @@ const BoReviewsForm = () => {
           Rating
           <input
             className={styles.input}
-            type="text"
+            type="number"
             value={review?.rating || ""}
             onChange={(e) =>
-              setReview({ ...review, rating: e.target.value })
+              setReview({ ...review, rating: parseInt(e.target.value) })
             }
           ></input>
         </label>

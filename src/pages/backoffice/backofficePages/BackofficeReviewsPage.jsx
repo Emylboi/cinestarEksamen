@@ -12,6 +12,7 @@ const BackofficeReviewsPage = () => {
     const { token } = useAuth(); // Get token from useAuth hook.
   
     const headers = {
+      "Content-Type": "application/json", // Set content type to JSON.
       Authorization: `Bearer ${token}`, // Include token in Authorization header
     };
   
@@ -29,7 +30,7 @@ const BackofficeReviewsPage = () => {
         let response = await fetch("http://localhost:3042/review", {
           // Fetches the data from the API server with the /employee endpoint.
           method: "POST", // Method is POST, because we are posting data to the server.
-          body: formData, // We are posting data from a form.
+          body: JSON.stringify(formData),
           headers,
         });
   
@@ -64,7 +65,7 @@ const BackofficeReviewsPage = () => {
         let response = await fetch("http://localhost:3042/review", {
           // Fetches the data from the API server with the /review endpoint.
           method: "PUT", // Method is PUT, because we are updating data in the server.
-          body: formData, // We are updating data from a form.
+          body: JSON.stringify(formData),
           headers,
         });
   
