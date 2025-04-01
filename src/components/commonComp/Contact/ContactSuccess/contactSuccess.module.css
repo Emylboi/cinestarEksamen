@@ -1,0 +1,41 @@
+.successContainer {
+    height: 40vh;
+    width: 100%;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: black;
+    padding: 0 25px;
+}
+
+.successMessage {
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 5vh;
+}
+
+.thankYouName{
+    font-size: 2rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+.responseTime{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.closeButton{
+    width: 100%;
+    border: 1px solid var(--orange-color);
+    border-radius: 1px;
+    color: var(--orange-color);
+}

@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    
+}
+
+.content{
+    width: 100%;
+}
+
+.form{
+    padding: 5vh 25px;
+}
+
+.form input, .form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    border-left: 1px solid rgb(184, 184, 184);
+    color: rgb(184, 184, 184);   
+}
+
+.sendContact{
+    border: 1px solid var(--orange-color);
+    border-radius: 1px;
+    background-color: transparent;
+    color: var(--orange-color);
+}

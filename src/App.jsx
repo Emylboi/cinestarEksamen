@@ -39,7 +39,7 @@ function App() {
       element: <FAQPage />,
     },
     {
-      path: "/kontakt",
+      path: "/contact",
       element: <ContactPage />,
     },
     {

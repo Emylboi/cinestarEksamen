@@ -1,7 +1,9 @@
 .container{
     width: 100%;
+    background-color: var(--black-color);
 }
 
 .content{
     text-align: center;
+    padding: 3vh 0 5vh;
 }
