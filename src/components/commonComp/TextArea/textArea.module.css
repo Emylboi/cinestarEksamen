@@ -12,20 +12,27 @@
   align-items: start;
   flex-flow: column;
   gap: 10px;
+  
 }
 
 .subTitle {
   color: var(--orange-color);
   font-family: "Quicksand", sans-serif;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .title{
     color: var(--white-color);
     font-family: "Cormorant", serif;
     width: 100%;
+    font-size: 2rem;
 }
 
 .text{
     color: var(--white-color);
+}
+
+.image{
+  width: 100%;
 }

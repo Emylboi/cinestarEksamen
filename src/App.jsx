@@ -11,6 +11,10 @@ import BackofficeReviewsPage from "./pages/backoffice/backofficePages/Backoffice
 import BoReviewsForm from "./components/backofficeComp/Reviews/outlet/BoReviewsForm";
 import Header from "./components/commonComp/Header/Header";
 import Footer from "./components/commonComp/Footer/Footer";
+import BlogPage from "./pages/client/blog/BlogPage";
+import FAQPage from "./pages/client/faq/FAQPage";
+import ContactPage from "./pages/client/contact/Contactpage";
+import SpecificBlogPage from "./pages/client/specificBlog/SpecificBlogPage";
 
 function App() {
   const { signedIn, user } = useAuth();
@@ -21,6 +25,22 @@ function App() {
     {
       path: "/",
       element: <HomePage />,
+    },
+    {
+      path: "/blog",
+      element: <BlogPage />,
+    },
+    {
+      path: "/blog/:id",
+      element: <SpecificBlogPage />,
+    },
+    {
+      path: "/faq",
+      element: <FAQPage />,
+    },
+    {
+      path: "/kontakt",
+      element: <ContactPage />,
     },
     {
       path: "/login",
