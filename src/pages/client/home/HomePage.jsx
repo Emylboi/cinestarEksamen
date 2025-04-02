@@ -9,8 +9,10 @@ import HomeService from "../../../components/pageComp/HomePageComps/HomeService/
 import TextArea from "../../../components/commonComp/TextArea/TextArea";
 import HomeReviews from "../../../components/pageComp/HomePageComps/HomeReviews/HomeReviews";
 import Contact from "../../../components/commonComp/Contact/Contact";
+import HomeBlog from "../../../components/pageComp/HomePageComps/HomeBlog/HomeBlog";
 
 const HomePage = () => {
+    
     return(
         <>
             <HomeHero/>
@@ -24,6 +26,7 @@ const HomePage = () => {
             <HomeReviews/>
             <TextArea backgroundColor="black" subTitle="KONTAKT" title="BOOK EN SAMTALE MED OS" text="Har du spørgsmål eller ønsker du at vide mere om, hvordan vi kan hjælpe med dit næste projekt? Udfyld formularen, og vi kontakter dig hurtigst muligt. Vi ser frem til at samarbejde med dig!"/>
             <Contact background="url(studie2.jpg)"/>
+            <HomeBlog/>
         </>
 
     )

@@ -1,0 +1,49 @@
+.container{
+    background-color: #212121;
+    width: 100%;
+    padding: 8vh 0;
+}
+
+.blogContainer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 3vh;
+    border: 1px solid rgba(104, 104, 104, 0.267);
+}
+
+.image{
+    width: 100%;
+}
+
+.textContainer{
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.title{
+    color: var(--orange-color);
+    font-size: 1.8rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+.teaser, .created{
+    color: var(--white-color);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+.created{
+    font-size: 1.2rem;
+    text-align: end;
+    width: 100%;
+}
