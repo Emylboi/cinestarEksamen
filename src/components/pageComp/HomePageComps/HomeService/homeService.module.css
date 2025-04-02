@@ -73,3 +73,10 @@
         width: 100%;
     }
 }
+
+@media(min-width: 1024px){
+    .content{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}

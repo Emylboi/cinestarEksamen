@@ -47,3 +47,22 @@
     text-align: end;
     width: 100%;
 }
+
+@media(min-width: 1024px){
+    .content{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .container{
+        padding: 5vh 0;
+    }
+
+    .blogContainer{
+        flex-flow: row;
+    }
+
+    .textContainer{
+        justify-content: space-around;
+    }
+}

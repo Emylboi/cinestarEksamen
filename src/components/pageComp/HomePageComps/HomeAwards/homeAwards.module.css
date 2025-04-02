@@ -6,9 +6,28 @@
 
 .content{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
 }
 
 .awardLogo{
     width: 100%;
     padding: 25px;
+}
+
+@media(min-width: 1024px){
+    .container{
+        height: auto;
+        padding: 3vh 0;
+    }
+
+    .content{
+        flex-flow: row;
+    }
+
+    .awardLogo{
+        width: 30%;
+    }
 }

@@ -1,0 +1,32 @@
+.blog{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.image{
+    width: 100%;
+}
+
+.title{
+    color: var(--orange-color);
+}
+
+.description{
+    color: var(--white-color);
+}
+
+.button{
+    color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 1px;
+}

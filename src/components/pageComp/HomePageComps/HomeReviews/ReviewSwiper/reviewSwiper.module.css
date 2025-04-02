@@ -38,3 +38,21 @@
 .name{
     color: var(--orange-color);
 }
+
+@media(min-width: 1024px){
+    .review{
+        height: 300px;
+    }
+
+    .swiperSlide{
+        font-size: 1.8rem;
+    }
+
+    .rating{
+        font-size: 4rem;
+    }
+
+    .sender{
+        font-size: 2rem;
+    }
+}

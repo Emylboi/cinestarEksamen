@@ -16,7 +16,7 @@
     border: none;
     border-bottom: 1px solid rgb(184, 184, 184);
     border-left: 1px solid rgb(184, 184, 184);
-    color: rgb(184, 184, 184);   
+    color: rgb(255, 255, 255);   
 }
 
 .sendContact{
@@ -24,4 +24,16 @@
     border-radius: 1px;
     background-color: transparent;
     color: var(--orange-color);
+
+    &:hover{
+        color: white;
+        background-color: transparent;
+    }
+}
+
+@media(min-width: 1024px){
+    .content{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 }

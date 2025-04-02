@@ -48,3 +48,13 @@
     background-color: rgba(56, 56, 56, 0.283);
   }
   
+@media(min-width: 1024px){
+  .swiper{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .slide{
+    height: 600px;
+  }
+}

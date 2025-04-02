@@ -1,0 +1,38 @@
+.blog{
+    width: 100%;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 10vh 10px;
+}
+
+.content{
+    width: 100%;
+}
+
+.image{
+    width: 100%;
+}
+
+.text{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column wrap;
+    gap: 3vh;
+}
+
+.title{
+    color: var(--orange-color);
+    font-size: 2rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 3vh;
+}

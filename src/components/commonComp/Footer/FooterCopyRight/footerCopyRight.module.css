@@ -1,0 +1,38 @@
+.copyRightContainer{
+    background-image: url("/liquifer.png");
+    width: 100%;
+    height: auto;
+    
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.904);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 10px;
+    padding: 3vh 0;
+}
+
+.linkIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.logo{
+    width: 60%;
+}
+
+.copyRight{
+    color: var(--white-color);
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 25px;
+}

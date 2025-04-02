@@ -46,7 +46,7 @@ td img {
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid black;
-  color: black;
+  color: var(--white-color);
 }
 
 button {
@@ -55,6 +55,7 @@ button {
   font-size: 2rem;
   border-radius: 5px;
   cursor: pointer;
+ 
 }
 
 button:hover {
