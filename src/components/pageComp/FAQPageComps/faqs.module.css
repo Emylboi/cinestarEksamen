@@ -1,0 +1,11 @@
+.faqs{
+    background-color: var(--black-color);
+    width: 100%;
+    padding: 5vh 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 3vh;
+}
+

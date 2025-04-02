@@ -14,12 +14,14 @@
 }
 
 .text{
+    width: 100%;
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-flow: column wrap;
     gap: 3vh;
+    text-align: start;
 }
 
 .title{
@@ -30,9 +32,23 @@
 }
 
 .description{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     gap: 3vh;
+    text-align: start;
+}
+
+.sentence{
+    width: 100%;
+}
+
+@media(min-width: 1024px){
+    .content{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
 }

@@ -18,10 +18,14 @@ const Blog = ({ blog }) => {
   return (
     <div className={styles.blog}>
       <div className={styles.content}>
-        <img src={image} className={styles.image} alt="" />
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{displayedDescription}</p>
-        <button className={styles.button} onClick={handleClick}>LÆS MERE</button>
+        <div className={styles.blogContainer}>
+          <img src={image} className={styles.image} alt="" />
+          <div className={styles.textContainer}>
+            <h3 className={styles.title}>{title}</h3>
+            <p className={styles.description}>{displayedDescription}</p>
+            <button className={styles.button} onClick={handleClick}>LÆS MERE</button>
+          </div>
+        </div>
       </div>
     </div>
   );

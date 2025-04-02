@@ -33,3 +33,21 @@
     color: var(--white-color);
     font-size: 2rem;
 }
+
+@media(min-width: 1024px){
+    .heroContainer{
+        height: 80vh;
+        margin: 0 auto;
+    }
+
+    .overlayItems{
+        align-items: center;
+    }
+}
+
+@media(min-width: 482px){
+    .heroContainer{
+        height: 60vh;
+        margin: 0 auto;
+    }
+}

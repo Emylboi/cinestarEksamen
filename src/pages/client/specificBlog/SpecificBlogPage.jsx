@@ -12,7 +12,7 @@ const SpecificBlogPage = () => {
     const { title, description, image, created } = blog;
 
     const sentences = description.split(".").map((sentence, index) => {
-        return sentence.trim() ? <p key={index}>{sentence.trim()}.</p> : null;
+        return sentence.trim() ? <p key={index} className={styles.sentence}>{sentence.trim()}.</p> : null;
     });
 
 
