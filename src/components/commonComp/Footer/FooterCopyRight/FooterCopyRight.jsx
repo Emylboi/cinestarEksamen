@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
 import styles from "./footerCopyRight.module.css"
+
+import { Link } from "react-router-dom";
+
 
 const FooterCopyRight = () => {
     return(

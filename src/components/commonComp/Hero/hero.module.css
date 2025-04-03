@@ -1,53 +1,82 @@
-.heroContainer{
-    width: 100%;
-    height: 35vh;
-    background-image: url("/studio.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 10vh;
+.heroContainer {
+  width: 100%;
+  height: 35vh;
+  background-image: url("/studio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
 }
 
-.overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.overlayItems{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-flow: column;
-    padding: 0 25px;
+.overlayItems {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow: column;
+  padding: 0 25px;
 }
 
-.title{
+.title {
+  color: var(--white-color);
+  font-size: 3rem;
+}
+
+.breadcrumbs {
+  color: var(--white-color);
+  font-size: 2rem;
+  font-family: var(--primary-font);
+}
+
+.breadcrumbLink {
     color: var(--white-color);
-    font-size: 3rem;
-}
-
-.breadcrumbs{
-    color: var(--white-color);
-    font-size: 2rem;
-}
-
-@media(min-width: 1024px){
-    .heroContainer{
-        height: 80vh;
-        margin: 0 auto;
+    text-decoration: none;
+    font-family: var(--primary-font);
+    
+    &:hover {
+        color: var(--orange-color);
+        cursor: pointer;
     }
+}
 
-    .overlayItems{
+.activeBreadcrumb {
+    color: var(--orange-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--primary-font);
+
+  &:hover {
+    color: var(--orange-color);
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 482px) {
+    .heroContainer {
+      height: 60vh;
+      margin: 0 auto;
+    }
+    .overlayItems {
         align-items: center;
-    }
+      }
+  }
+
+@media (min-width: 1024px) {
+  .heroContainer {
+    height: 80vh;
+    margin: 0 auto;
+  }
+
+  .overlayItems {
+    align-items: center;
+  }
 }
 
-@media(min-width: 482px){
-    .heroContainer{
-        height: 60vh;
-        margin: 0 auto;
-    }
-}
+

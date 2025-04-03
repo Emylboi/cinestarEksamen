@@ -1,13 +1,16 @@
-import useTinyFetch from "../../../../../hooks/tinyFetch.hook";
-import { useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
 import styles from "./reviewSwiper.module.css";
+import 'swiper/css';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useState, useEffect } from "react";
+
+import useTinyFetch from "../../../../../hooks/tinyFetch.hook";
+
 
 const ReviewSwiper = () => {
     const [reviews, setReviews] = useState([]);
 
-    const { data, fetchData } = useTinyFetch();
+    const { data, fetchData, loading, error, noDataMessage } = useTinyFetch();
 
     useEffect(() => {
         fetchData("/reviews");
@@ -17,8 +20,12 @@ const ReviewSwiper = () => {
         setReviews(data);
       }, [data]);
 
+        if (loading) return <p  className={styles.white}>Loading...</p>;
+        if (error) return <p className={styles.white}>{noDataMessage}</p>;
+
     return (
         <div className={styles.swiperContainer}>
+            
             <Swiper
                 spaceBetween={20}
                 slidesPerView="auto"

@@ -46,11 +46,11 @@
   
   .logout {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
     padding: 0;
-  
+    
   }
   
   .nav a, .nav button {
@@ -60,8 +60,11 @@
     text-decoration: none;
     border: none;
     font-weight: 100;
+    text-align: start;
+    font-family: var(--font-quicksand);
+    font-weight: 500;
   }
-  
+
   .nav a:hover, .nav .logout:hover {
     color: var(--orange-color);
   }
@@ -77,10 +80,15 @@
         width: 100%;
         text-align: center;
     }
+    
+    .nav{
+      place-content: center;
+    }
 
     .nav a, .nav .logout{
       width: 100%;
       margin: 2vh 0;
+      justify-content: center;
+      text-align: center;
     }
-
 }

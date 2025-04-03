@@ -1,5 +1,7 @@
-import React from "react";
 import styles from "./boMessageList.module.css";
+
+import React from "react";
+
 
 const MessageModal = ({ message, closeModal }) => {
   if (!message) return null;

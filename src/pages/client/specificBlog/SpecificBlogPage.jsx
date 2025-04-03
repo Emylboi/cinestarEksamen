@@ -1,6 +1,9 @@
-import { useLocation } from "react-router-dom";
 import styles from "./specificBlogPage.module.css"
+
+import { useLocation } from "react-router-dom";
+
 import Hero from "../../../components/commonComp/Hero/Hero";
+
 
 const SpecificBlogPage = () => {
     const { state: blog } = useLocation();
@@ -18,7 +21,7 @@ const SpecificBlogPage = () => {
 
     return(
         <section className={styles.container}>
-            <Hero/>
+            <Hero title="BLOG ARKIV" bc1="Forside" bc1Link="/" bc2="BLOG ARKIV" bc2Link="/blog" bc3="BLOG"/>
             <div className={styles.blog}>
               <div className={styles.content}>
                 <img src={image} className={styles.image} alt="" />

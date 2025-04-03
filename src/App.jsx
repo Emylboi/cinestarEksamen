@@ -1,20 +1,26 @@
 import { useRoutes } from "react-router-dom";
-import useAuth from "./hooks/useAuth";
-import BackofficePage from "./pages/backoffice/BackofficePage";
+
 import BackofficeBlogsPage from "./pages/backoffice/backofficePages/BackofficeBlogsPage";
-import BoBlogsForm from "./components/backofficeComp/Blogs/outlet/BoBlogsForm";
-import HomePage from "./pages/client/home/HomePage";
-import Login from "./components/commonComp/Header/Login/Login";
-import ProtectedRoute from "./components/ProtectedRoute";
 import BackofficeMessagesPage from "./pages/backoffice/backofficePages/BackofficeMessagesPage";
 import BackofficeReviewsPage from "./pages/backoffice/backofficePages/BackofficeReviewsPage";
+import BackofficePage from "./pages/backoffice/BackofficePage";
+
+import BoBlogsForm from "./components/backofficeComp/Blogs/outlet/BoBlogsForm";
 import BoReviewsForm from "./components/backofficeComp/Reviews/outlet/BoReviewsForm";
-import Header from "./components/commonComp/Header/Header";
-import Footer from "./components/commonComp/Footer/Footer";
+
 import BlogPage from "./pages/client/blog/BlogPage";
-import FAQPage from "./pages/client/faq/FAQPage";
 import ContactPage from "./pages/client/contact/Contactpage";
+import FAQPage from "./pages/client/faq/FAQPage";
+import HomePage from "./pages/client/home/HomePage";
 import SpecificBlogPage from "./pages/client/specificBlog/SpecificBlogPage";
+
+import Footer from "./components/commonComp/Footer/Footer";
+import Header from "./components/commonComp/Header/Header";
+import Login from "./components/commonComp/Header/Login/Login";
+
+import ProtectedRoute from "./components/ProtectedRoute";
+import useAuth from "./hooks/useAuth";
+
 
 function App() {
   const { signedIn, user } = useAuth();

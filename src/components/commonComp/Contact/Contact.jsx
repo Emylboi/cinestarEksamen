@@ -1,7 +1,8 @@
+import styles from "./contact.module.css";
+
 import ContactForm from "./ContactForm/ContactForm";
 import ContactInfo from "./ContactInfo/ContactInfo";
 
-import styles from "./contact.module.css";
 
 const Contact = ({background}) => {
     /* Checks for type of background*/

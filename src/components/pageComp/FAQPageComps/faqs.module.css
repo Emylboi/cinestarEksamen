@@ -9,3 +9,9 @@
     gap: 3vh;
 }
 
+.white{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 5vh 0;
+}

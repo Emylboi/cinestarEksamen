@@ -1,5 +1,6 @@
 import styles from "./footerInfo.module.css"
 
+
 const FooterInfo = () => {
     return(
         <section className={styles.infoContainer}>

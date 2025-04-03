@@ -1,16 +1,13 @@
-import styles from "./homePage.module.css";
-
-
+import Contact from "../../../components/commonComp/Contact/Contact";
+import FooterInfo from "../../../components/commonComp/Footer/FooterInfo/FooterInfo";
 import HomeAwards from "../../../components/pageComp/HomePageComps/HomeAwards/HomeAwards";
+import HomeBlog from "../../../components/pageComp/HomePageComps/HomeBlog/HomeBlog";
 import HomeHero from "../../../components/pageComp/HomePageComps/HomeHero/HomeHero";
 import HomePortfolio from "../../../components/pageComp/HomePageComps/HomePortfolio/HomePortfolio";
-import HomeVideo from "../../../components/pageComp/HomePageComps/HomeVideo/HomeVideo";
-import HomeService from "../../../components/pageComp/HomePageComps/HomeService/HomeService";
-import TextArea from "../../../components/commonComp/TextArea/TextArea";
 import HomeReviews from "../../../components/pageComp/HomePageComps/HomeReviews/HomeReviews";
-import Contact from "../../../components/commonComp/Contact/Contact";
-import HomeBlog from "../../../components/pageComp/HomePageComps/HomeBlog/HomeBlog";
-import FooterInfo from "../../../components/commonComp/Footer/FooterInfo/FooterInfo";
+import HomeService from "../../../components/pageComp/HomePageComps/HomeService/HomeService";
+import HomeVideo from "../../../components/pageComp/HomePageComps/HomeVideo/HomeVideo";
+import TextArea from "../../../components/commonComp/TextArea/TextArea";
 
 const HomePage = () => {
     

@@ -3,3 +3,10 @@
     background-color: var(--black-color);
     padding: 8vh 15px;
 }
+
+.white{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 5vh 0;
+}

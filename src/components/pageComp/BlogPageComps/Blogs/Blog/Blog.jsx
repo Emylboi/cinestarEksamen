@@ -1,5 +1,7 @@
-import { useNavigate } from "react-router-dom";
 import styles from "./blog.module.css";
+
+import { useNavigate } from "react-router-dom";
+
 
 /* Single Blog component for single view */
 const Blog = ({ blog }) => {
@@ -21,7 +23,7 @@ const Blog = ({ blog }) => {
         <div className={styles.blogContainer}>
           <img src={image} className={styles.image} alt="" />
           <div className={styles.textContainer}>
-            <h3 className={styles.title}>{title}</h3>
+            <h3 className={styles.title}>{title.toUpperCase()}</h3>
             <p className={styles.description}>{displayedDescription}</p>
             <button className={styles.button} onClick={handleClick}>LÆS MERE</button>
           </div>

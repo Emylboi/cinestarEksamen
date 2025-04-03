@@ -1,6 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import styles from "./boBlogList.module.css";
+
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+
 
 // This component shows the list of all our blogs in the backoffice section.
 const BoBlogList = ({ blogs, deleteBlog }) => {

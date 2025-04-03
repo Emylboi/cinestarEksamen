@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
 import styles from "./header.module.css"
+
+import { Link } from "react-router-dom";
+
 import Navigation from "./Navigation/Navigation";
-import { FaBarsStaggered } from "react-icons/fa6";
+
 
 const Header = () => {
   return (

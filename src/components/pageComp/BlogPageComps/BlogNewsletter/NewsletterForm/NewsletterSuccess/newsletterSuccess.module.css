@@ -1,0 +1,27 @@
+.successContainer {
+    height: auto;
+    width: 100%;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 3vh 25px;
+}
+
+.successMessage {
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 3vh;
+}
+
+.thankYouEmail{
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+}

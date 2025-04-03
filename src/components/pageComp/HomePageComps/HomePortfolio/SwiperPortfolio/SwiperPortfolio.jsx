@@ -1,8 +1,9 @@
 import styles from "./swiperPortfolio.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
 
 const SwiperPortfolio = ({ images = [] }) => {
   return (

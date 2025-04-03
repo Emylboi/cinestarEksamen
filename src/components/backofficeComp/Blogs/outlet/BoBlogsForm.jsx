@@ -1,6 +1,8 @@
+import styles from "../../boForm.module.css";
+
 import { useEffect, useRef, useState } from "react";
 import { useOutletContext, useParams } from "react-router-dom";
-import styles from "../../boForm.module.css";
+
 
 const BoBlogsForm = () => {
   // We get the id from the URL.
@@ -77,7 +79,12 @@ const BoBlogsForm = () => {
             }
             width={200}
           ></img>
-          <input className={styles.input} type="file" name={"file"} onChange={onImageChange}></input>
+          <input
+            className={styles.input}
+            type="file"
+            name={"file"}
+            onChange={onImageChange}
+          ></input>
         </label>
         <label>
           {" "}
@@ -86,9 +93,7 @@ const BoBlogsForm = () => {
             className={styles.input}
             type="text"
             value={blog?.title || ""}
-            onChange={(e) =>
-              setBlog({ ...blog, title: e.target.value })
-            }
+            onChange={(e) => setBlog({ ...blog, title: e.target.value })}
           ></input>
         </label>
         <label>
@@ -98,9 +103,7 @@ const BoBlogsForm = () => {
             className={styles.input}
             type="text"
             value={blog?.teaser || ""}
-            onChange={(e) =>
-              setBlog({ ...blog, teaser: e.target.value })
-            }
+            onChange={(e) => setBlog({ ...blog, teaser: e.target.value })}
           ></input>
         </label>
         <label>
@@ -110,15 +113,17 @@ const BoBlogsForm = () => {
             className={styles.input}
             type="text"
             value={blog?.description || ""}
-            onChange={(e) =>
-              setBlog({ ...blog, description: e.target.value })
-            }
+            onChange={(e) => setBlog({ ...blog, description: e.target.value })}
           ></input>
         </label>
-      
+
         <div className={styles.buttons}>
-          <button className={styles.button}>{editMode ? "Redigér Blog" : "Opret Blog"}</button>{" "}
-          <button className={styles.button} type="reset">RESET</button>
+          <button className={styles.button}>
+            {editMode ? "Redigér Blog" : "Opret Blog"}
+          </button>{" "}
+          <button className={styles.button} type="reset">
+            RESET
+          </button>
         </div>
       </form>
     </div>

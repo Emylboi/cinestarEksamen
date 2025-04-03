@@ -1,8 +1,11 @@
-import TextArea from "../../../commonComp/TextArea/TextArea";
 import styles from "./homeService.module.css";
+
+import TextArea from "../../../commonComp/TextArea/TextArea";
+
 import { FaRegImages, FaTape } from "react-icons/fa6";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { IoMdMusicalNote } from "react-icons/io";
+
 
 const HomeService = () => {
   return (

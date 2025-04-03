@@ -1,6 +1,8 @@
-import TextArea from "../../../commonComp/TextArea/TextArea";
 import styles from "./homePortfolio.module.css";
+
 import SwiperPortfolio from "./SwiperPortfolio/SwiperPortfolio";
+import TextArea from "../../../commonComp/TextArea/TextArea";
+
 
 const HomePortfolio = () => {
   return (

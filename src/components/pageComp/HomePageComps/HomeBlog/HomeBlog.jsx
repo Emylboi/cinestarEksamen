@@ -1,12 +1,14 @@
-import useBlog from "../../../../hooks/useBlog";
-import TextArea from "../../../commonComp/TextArea/TextArea";
 import styles from "./homeBlog.module.css"
+
+import TextArea from "../../../commonComp/TextArea/TextArea";
+import useBlog from "../../../../hooks/useBlog";
+
 
 const HomeBlog = () => {
     const { blog, loading, error, noDataMessage } = useBlog();
 
     if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
+    if (error) return <p className={styles.white}>{noDataMessage}</p>;
     if (!blog) return <p>{noDataMessage || "No recent blogs available."}</p>;
 
     return (

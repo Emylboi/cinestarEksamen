@@ -1,5 +1,6 @@
 import styles from "./textArea.module.css"
 
+
 const TextArea = ({ subTitle, title, text, imgSrc, backgroundColor}) => {
     return(
         <section className={styles.container} style={{backgroundColor: backgroundColor || "transparent"}}>

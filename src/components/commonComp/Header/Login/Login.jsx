@@ -1,5 +1,7 @@
-import useAuth from "../../../../hooks/useAuth";
 import styles from "./Login.module.css";
+
+import useAuth from "../../../../hooks/useAuth";
+
 
 const Login = () => {
   const { setEmail, setPassword, error, signIn } = useAuth();

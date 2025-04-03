@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
 import styles from "./blogs.module.css";
+
+import { useEffect, useState } from "react";
+
 import Blog from "./Blog/Blog";
 import useTinyFetch from "../../../../hooks/tinyFetch.hook";
+
 
 //All Blogs
 const Blogs = () => {
@@ -19,9 +22,9 @@ const Blogs = () => {
 
   return (
     <div className={styles.blogs}>
-      {loading && <p>Loading...</p>}
+      {loading && <p className={styles.white}>Loading...</p>}
 
-      {noDataMessage && <p>{noDataMessage}</p>}
+      {noDataMessage && <p className={styles.white}>{noDataMessage}</p>}
 
       {blogs.length > 0 &&
         blogs.map((blog) => <Blog key={blog._id} blog={blog} />)}

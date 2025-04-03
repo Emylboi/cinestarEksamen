@@ -1,8 +1,11 @@
-import { useNavigate } from "react-router-dom";
 import styles from "./boMessageList.module.css";
-import Swal from "sweetalert2";
+
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 import MessageModal from "./MessageModal";
+
 
 // This component shows the list of all our messages in the backoffice section.
 const BoMessageList = ({ messages, deleteMessage }) => {

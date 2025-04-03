@@ -1,6 +1,8 @@
-import TextArea from "../../../commonComp/TextArea/TextArea";
 import styles from "./homeReviews.module.css"
+
+import TextArea from "../../../commonComp/TextArea/TextArea";
 import ReviewSwiper from "./ReviewSwiper/ReviewSwiper";
+
 
 const HomeReviews = () => {
     return(

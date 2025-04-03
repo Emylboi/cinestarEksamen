@@ -48,6 +48,13 @@
     width: 100%;
 }
 
+.white{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 5vh 0;
+}
+
 @media(min-width: 1024px){
     .content{
         max-width: 1024px;

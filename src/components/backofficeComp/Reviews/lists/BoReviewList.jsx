@@ -1,6 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import styles from "./boReviewList.module.css";
+
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+
 
 // This component shows the list of all our reviews in the backoffice section.
 const BoReviewList = ({ reviews, deleteReview }) => {

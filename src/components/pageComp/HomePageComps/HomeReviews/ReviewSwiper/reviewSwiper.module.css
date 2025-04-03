@@ -31,12 +31,23 @@
     font-size: 2rem;
 }
 
+.text{
+    width: 100%;
+}
+
 .sender{
     width: 100%;
 }
 
 .name{
     color: var(--orange-color);
+}
+
+.white{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 5vh 0;
 }
 
 @media(min-width: 1024px){
