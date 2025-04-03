@@ -97,16 +97,21 @@ const BoReviewsForm = () => {
           ></input>
         </label>
         <label>
-          {" "}
           Rating
-          <input
+          <select
             className={styles.input}
-            type="number"
             value={review?.rating || ""}
             onChange={(e) =>
               setReview({ ...review, rating: parseInt(e.target.value) })
             }
-          ></input>
+          >
+            <option value="" disabled>Select a rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </label>
       
         <div className={styles.buttons}>

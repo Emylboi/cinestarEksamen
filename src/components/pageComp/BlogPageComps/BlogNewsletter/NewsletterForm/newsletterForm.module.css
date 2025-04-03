@@ -37,6 +37,10 @@ input{
     }
 }
 
+.nameInput{
+    color: var(--black-color);
+}
+
 @media(min-width: 1024px){
     .formContainer{
         max-width: 1024px;

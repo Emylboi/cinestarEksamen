@@ -41,6 +41,7 @@ const NewsletterForm = () => {
         <div className={styles.formContainer}>
             <form className={styles.form} onSubmit={handleSubmit}>
                 <input
+                    className={styles.nameInput}
                     type="email"
                     name="email"
                     placeholder="Email"

@@ -15,9 +15,9 @@ const FAQ = ({faq}) => {
                 <p className={styles.question}>{question.toUpperCase()}</p>
                 <div className={`${styles.accordionIcon} ${isOpen ? styles.active : ''}`}>
                     {!isOpen ? (
-                        <IoIosArrowDown className={styles.as} />
+                        <IoIosArrowDown/>
                     ) : (
-                        <IoIosArrowUp className={styles.as}/>
+                        <IoIosArrowUp/>
                     )}
                 </div>
             </div>

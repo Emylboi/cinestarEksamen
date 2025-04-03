@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import useTinyFetch from "./tinyFetch.hook";
 
 
-const useBlog = (created) => {
+const useBlog = () => {
   const [blog, setBlog] = useState(null);
   const { data, fetchData, loading, error, noDataMessage } = useTinyFetch();
 
