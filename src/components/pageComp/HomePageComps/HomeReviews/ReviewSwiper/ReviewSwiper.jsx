@@ -28,8 +28,8 @@ const ReviewSwiper = () => {
             
             <Swiper
                 spaceBetween={20}
-                slidesPerView="auto"
-                loop={reviews.length > 1}
+                slidesPerView={2}
+                loop={reviews.length > 3}
                 centeredSlides={true}
             >
                 {reviews.map((review) => (
